@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>匿名情绪宣泄墙</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="overlay"></div>
+
+    <div class="container">
+        <div class="image-wrapper">
+        <img src="logo2.png" alt="Logo" class="logo">
+        <h1>匿名情绪宣泄墙</h1>
+        <p class="desc">没人知道你是谁。</p>
+        </div>
+
+        <textarea id="messageInput" placeholder="把压抑的话写下来..."></textarea>
+
+        <button onclick="postMessage()">匿名发布</button>
+
+        <div id="messages"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

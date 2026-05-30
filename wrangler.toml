@@ -1,0 +1,7 @@
+﻿name = "xchat-api"
+main = "src/worker.js"
+compatibility_date = "2025-05-30"
+
+[[d1_databases]]
+binding = "xchat_db"
+database_name = "xchat-db"
