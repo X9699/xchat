@@ -2,7 +2,7 @@
 
 async function loadMessages() {
     const messages = document.getElementById("messages");
-    messages.innerHTML = '<p style="color:#666">鍔犺浇涓?..</p>';
+    messages.innerHTML = '<p style="color:#666">加载中...</p>';
 
     try {
         const res = await fetch(`${API_BASE}/api/messages`);
@@ -59,7 +59,7 @@ async function postMessage() {
     if (!content) return;
 
     btn.disabled = true;
-    btn.textContent = "鍙戝竷涓?..";
+    btn.textContent = "发布中...";
 
     try {
         const res = await fetch(`${API_BASE}/api/messages`, {
@@ -78,7 +78,7 @@ async function postMessage() {
         setTimeout(() => { btn.style.background = ""; }, 1500);
     } finally {
         btn.disabled = false;
-        btn.textContent = "鍖垮悕鍙戝竷";
+        btn.textContent = "匿名发布";
     }
 }
 
