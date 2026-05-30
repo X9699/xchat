@@ -10,13 +10,13 @@ async function loadMessages() {
         messages.innerHTML = "";
 
         if (data.length === 0) {
-            messages.innerHTML = '<p style="color:#666">杩樻病鏈夌暀瑷€锛屾潵鍋氱涓€涓惂銆?/p>';
+            messages.innerHTML = '<p style="color:#666">还没有留言，来做第一个吧。</p>';
             return;
         }
 
         data.forEach(msg => renderMessage(msg, false));
     } catch (e) {
-        messages.innerHTML = '<p style="color:#666">杩樻病鏈夌暀瑷€锛屾潵鍋氱涓€涓惂銆?/p>';
+        messages.innerHTML = '<p style="color:#666">还没有留言，来做第一个吧。</p>';
     }
 }
 
